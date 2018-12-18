@@ -115,6 +115,16 @@ namespace Wox
             }
         }
 
+        private void OnHideNotifyIconChecked(object sender, RoutedEventArgs e)
+        {
+            _api.HideNotifyIcon();
+        }
+
+        private void OnHideNotifyIconUnchecked(object sender, RoutedEventArgs e)
+        {
+            _api.ShowNotifyIcon();
+        }
+
         #endregion
 
         #region Hotkey

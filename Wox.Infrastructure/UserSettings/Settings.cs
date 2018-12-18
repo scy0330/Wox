@@ -44,6 +44,7 @@ namespace Wox.Infrastructure.UserSettings
 
         public bool StartWoxOnSystemStartup { get; set; } = true;
         public bool HideOnStartup { get; set; }
+        public bool HideNotifyIcon { get; set; }
         public bool LeaveCmdOpen { get; set; }
         public bool HideWhenDeactive { get; set; }
         public bool RememberLastLaunchLocation { get; set; }

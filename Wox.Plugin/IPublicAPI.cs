@@ -58,6 +58,18 @@ namespace Wox.Plugin
         void ShowApp();
 
         /// <summary>
+        /// Hide tray icon
+        /// </summary>
+        [Obsolete]
+        void HideNotifyIcon();
+
+        /// <summary>
+        /// Show tray icon
+        /// </summary>
+        [Obsolete]
+        void ShowNotifyIcon();
+
+        /// <summary>
         /// Show message box
         /// </summary>
         /// <param name="title">Message title</param>

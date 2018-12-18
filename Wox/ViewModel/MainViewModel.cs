@@ -259,6 +259,8 @@ namespace Wox.ViewModel
 
         public Visibility MainWindowVisibility { get; set; }
 
+        public Visibility NotifyIconVisibility { get; set; }
+
         public ICommand EscCommand { get; set; }
         public ICommand SelectNextItemCommand { get; set; }
         public ICommand SelectPrevItemCommand { get; set; }

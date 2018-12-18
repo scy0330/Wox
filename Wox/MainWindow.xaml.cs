@@ -84,6 +84,11 @@ namespace Wox
                         }
                     }
                 }
+
+                if (e.PropertyName == nameof(MainViewModel.NotifyIconVisibility))
+                {
+                    _notifyIcon.Visible = _viewModel.NotifyIconVisibility == Visibility.Visible;
+                }
             };
             InitializePosition();
         }
@@ -102,7 +107,7 @@ namespace Wox
             {
                 Text = Infrastructure.Constant.Wox,
                 Icon = Properties.Resources.app,
-                Visible = true
+                Visible = !_settings.HideNotifyIcon
             };
             var menu = new ContextMenuStrip();
             var items = menu.Items;
