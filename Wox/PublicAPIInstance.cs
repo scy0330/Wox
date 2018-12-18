@@ -80,18 +80,6 @@ namespace Wox
             _mainVM.MainWindowVisibility = Visibility.Visible;
         }
 
-        [Obsolete]
-        public void HideNotifyIcon()
-        {
-            _mainVM.NotifyIconVisibility = Visibility.Hidden;
-        }
-
-        [Obsolete]
-        public void ShowNotifyIcon()
-        {
-            _mainVM.NotifyIconVisibility = Visibility.Visible;
-        }
-
         public void ShowMsg(string title, string subTitle = "", string iconPath = "")
         {
             Application.Current.Dispatcher.Invoke(() =>
