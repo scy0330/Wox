@@ -84,10 +84,12 @@ namespace Wox
                         }
                     }
                 }
-
-                if (e.PropertyName == nameof(MainViewModel.NotifyIconVisibility))
+            };
+            _settings.PropertyChanged += (o, e) =>
+            {
+                if (e.PropertyName == nameof(Settings.HideNotifyIcon))
                 {
-                    _notifyIcon.Visible = _viewModel.NotifyIconVisibility == Visibility.Visible;
+                    _notifyIcon.Visible = _settings.HideNotifyIcon;
                 }
             };
             InitializePosition();
