@@ -89,7 +89,7 @@ namespace Wox
             {
                 if (e.PropertyName == nameof(Settings.HideNotifyIcon))
                 {
-                    _notifyIcon.Visible = _settings.HideNotifyIcon;
+                    _notifyIcon.Visible = !_settings.HideNotifyIcon;
                 }
             };
             InitializePosition();
